@@ -2,7 +2,7 @@ This is a solution to the track IP address challenge on Frontend Mentor.
 
 Links
 
-Live Site URL:
+Live Site URL:https://alinedi.github.io/IP_Address_Tracker/
 
 Built with
 
