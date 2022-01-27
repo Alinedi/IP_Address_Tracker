@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Leaflet CSS -->
+    <link rel="stylesheet" href=
+        "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity=
+"sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity=
+"sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+        <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts Rubik -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&family=Rubik:ital,wght@0,400;0,700;1,500&family=Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="IPtracker">
+      <div class="content">
+        <div class="heading">
+          <div class="img">
+            <img id="pattern-img" src="images/pattern-bg.png" alt=""/>
+          </div>
+          <div class="title">
+            <h2 id="title">IP Address Tracker</h3>
+          </div>
+          <div class="search-box">
+            <input id="IPadress" type="text" value='' placeholder="Search for any IP address or domain" />
+            <button id="search" type="submit"><img src="images/icon-arrow.svg" alt="" /></button>
+          </div>
+        </div>
+        <div id="mymap"> </div>
+        <div class="IPdetails">
+            <div class="content1">
+              <h6>IP ADDRESS</h6>
+              <p id="DisplayIP"></p>
+            </div>
+            <div class="content2">
+              <h6>LOCATION</h6>
+              <p id="DisplayLoca"></p>
+            </div>
+            <div class="content3">
+              <h6>TIMEZONE</h6>
+              <p id="DisplayTime"></p>
+            </div>
+            <div class="content4">
+              <h6>ISP</h6>
+              <p id="DisplayISP"></p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src='index.js' charset="utf-8"></script>
+  <script type='text/javascript' src='config.js'></script>
+</body>
+</html>

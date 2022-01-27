@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .content{
+    display:flex;
+    height:100%;
+    width:100%;
+  }
+  .heading{
+    display:flex;
+    justify-content: center;
+    position:relative;
+  }
+
+  .img{
+    width:100%;
+    height:30%;
+  }
+
+  .title{
+    position:absolute;
+    display:flex;
+    top:25px;
+    left:40%;
+    font-weight: 700;
+    color:white;
+  }
+
+  .search-box{
+    position:absolute;
+    display:flex;
+    top:80px;
+    left:35%
+    }
+
+    .search-box input[type="text"]{
+      width:25rem;
+      height:3rem;
+      border-radius: 15px 0 0 15px;
+      padding-left: 15px;
+      font-size: 14px;
+      font-weight:400;
+      border:none;
+    }
+
+    #IPadress:hover , #search:hover{
+      cursor: url("images/icon-arrow.svg"),pointer;
+    }
+    .search-box button{
+      width:2.5rem;
+      height:3rem;
+      border-radius: 0 15px 15px 0;
+      background-color: hsl(0, 0%, 17%);
+      color:white;
+      font-weight: bold;
+      border:none;
+    }
+
+  ::placeholder {
+  color:hsl(0, 0%, 59%);
+  opacity:80%;
+  }
+
+  .IPdetails{
+    position:absolute;
+    width:60%;
+    justify-content: center;
+    height:20%;
+    background-color: white;
+    top:28%;
+    left:23%;
+    border-radius:10px;
+    display:flex;
+  }
+  .IPdetails > div{
+    display:inline-block;
+    float:left;
+    width:25%;
+
+
+    padding:17px;
+    margin-top: 15px;
+    letter-spacing: 0.1em;
+    color:hsl(0, 0%, 59%);
+    opacity:80%;
+    z-index: 1;
+    position:relative;
+  }
+  /*For mobile devices*/
+
+  @media screen and (min-width: 376px){
+  .content1:before,.content2:before,.content3:before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 20%;
+        height: 55px;
+        border-right: 1px solid hsl(0, 0%, 59%,0.5);
+  }
+}
+  .content1 p,.content2 p,.content3 p,.content4 p{
+    color:black;
+    padding-top:10px;
+    color:black;
+    font-weight: 700;
+    font-size: 18px;
+    overflow-wrap: break-word;
+  }
+
+  #mymap{
+    height:67%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    position:absolute;
+    display:flex;
+    z-index: 0;
+
+  }
+
+  @media screen and (max-width: 375px) {
+
+    .title{
+      position:absolute;
+      display:flex;
+      left:45%;
+      justify-content: center;
+      font-size: 10px;
+      color:white;
+    }
+
+    .search-box{
+      position:absolute;
+      display:flex;
+      top:65px;
+      left:40%
+      }
+
+    .search-box input[type="text"]{
+      width:15rem;
+      height:3rem;
+      border-radius: 15px 0 0 15px;
+      padding-left: 15px;
+      font-size: 14px;
+      font-weight:400;
+      border:none;
+    }
+
+    .IPdetails{
+      position:absolute;
+      text-align:center;
+      padding-left: 28px;
+      display:block;
+      width:17.5rem;
+      height:15rem;
+      background-color: white;
+      top:25%;
+      left:11%;
+      border-radius:15px;
+      z-index: 1;
+    }
+    .IPdetails div{
+      max-width:40%;
+       min-width:230px;
+       margin-top:0px;
+      letter-spacing: 0.1em;
+      color:hsl(0, 0%, 59%);
+      padding-bottom:0px;
+      opacity:80%;
+      font-size: 13px;
+    }
+    .content1 p,.content2 p,.content3 p,.content4 p{
+      color:black;
+      padding-top:3px;
+      font-weight: 700;
+      font-size: 15px;
+      overflow-wrap:break-word;
+    }
+
+    #mymap{
+      position:absolute;
+      height:100%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top:44%;
+      width:100%;
+      display:flex;
+      z-index: 0;
+      padding-right:100px;
+
+    }
+
+  }
